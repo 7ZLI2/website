@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.container {
+    scroll-snap-type: y mandatory;
+    /*overflow-y: scroll;
+    scroll-behavior: smooth;
+    height: 100vh;*/
+}
+
+section {
+    height: 100vh;
+    display: grid;
+    align-content: center;
+    place-items: center;
+    scroll-snap-align: start;
+}
+
+p {
+    max-width: 600px;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+h1 {
+    margin: 0 auto;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    padding: 5px 8px;
+}
+
+p3 {
+    max-width: 600px;
+    margin: auto;
+    border-radius: 5px;
+    padding: 5px 8px;
+    font-size: xx-large;
+}
+
+.Aboutme, p3, h1, p {
+    animation: CSS ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 20% cover 50%;
+}
+
+.skills {
+    animation: CSS ease-in-out both;
+    animation-timeline: view();
+    animation-range: entry 0% cover 20%;
+}
+
+@keyframes CSS {
+    from {
+        opacity: 0;
+        transform: translateY(100);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*scrollbar not visible*/
+::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+.MainScreen {
+    background-color: #00000077;
+    background-attachment: fixed;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Aboutme {
+    background-color: black;
+}
+
+.divinsect {
+    background-color: black;
+}
+.ImagesSlider {
+    background-color: black;
+}
+
+.BannerText {
+    max-width: 100%;
+    height: auto;
+    position: absolute;
+    transform: translateX(-300px);
+    font-size: 50px;
+}
+
+.Imgbap {
+    display: grid;
+    transform: scale(0.85);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px -1px black;
+    transition: all .5s;
+}
+
+.Imgbap:hover {
+    transform: scale(.9);
+    cursor: pointer;
+}
+
+  .slider{
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 500px;
+  }
+  
+  /*css for manual slide navigation*/
+  
+  .navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #40D3DC;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -60%;
+  }
+  
+  /*css for automatic navigation*/
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: #40D3DC;
+  }
+        
+
+footer {
+    background-color: #080808;
+    position: relative;
+    display: grid;
+    text-align: center;
+    border-top: 1px solid gray;
+    justify-content: center;
+    height: 25vh;
+    width: 100vw;
+    scroll-snap-align: start;
+
+    p2 {
+        max-width: 600px;
+        margin: auto;
+        letter-spacing: 1px;
+        border-radius: 5px;
+    }
+}
+
+.line
+{
+    background-color: gray;
+    margin: auto;
+    width: 10rem;
+    height: 0.11rem;
+    border-radius: 5px;
+}
+
+.line1 {
+    background-color: gray;
+    width: 0.10rem;
+    height: 30rem;
+    position: absolute;
+    margin-left: 90%;
+    right: 12vw;
+    border-radius: 5px;
+}
+
+.arrow {
+    bottom: 10%;
+    position: absolute;
+    transform: translateX(-50%);
+    animation: scroll 2.5s infinite;
+}
+
+.arrow span {
+    display: block;
+    width: 3.5vh;
+    height: 3.5vh;
+    border-bottom: 2px solid white;
+    border-right: 2px solid white;
+    transform: rotate(45deg);
+    margin: -5px;
+    animation: animate 2s infinite;
+}
+
+.arrow span:nth-child(2) { animation-delay: -0.2s;}
+.arrow span:nth-child(3) { animation-delay: -0.4s;}
+.arrow span:nth-child(4) { animation-delay: -0.6s;}
+
+@keyframes animate {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg); translate: (-20px, 20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
+
+}
+
+#navbar a {
+    float: left;
+    display: grid;
+    color: #f2f2f2;
+    text-align: center;
+    justify-content: center;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+#navbar a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+.skills
+{
+    position: relative;
+    width: 600px;
+    white-space: nowrap;
+}
+
+.skills span
+{
+    display: inline-flex;
+    margin: 5px;
+    background-color: #1d1d1d;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.5s;
+
+}
+
+.skills span:hover
+{
+    background: #070707;
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+    container, footer, p1 {
+      width: 100%;
+    }
+  }

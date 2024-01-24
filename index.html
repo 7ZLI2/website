@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" 
+    content="width=device-width, initial-scale=1.0">
+    <title>7ZLI2's portfolio</title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Place the video behind other content */
+        }
+
+        #navbar {
+            background-color: #080808;
+            position: fixed;
+            left: -100px;
+            width: 6rem;
+            border: 1px solid gray;
+            border-radius: 20px;
+            height: 20rem;
+            display: grid;
+            transform: translateY(49%);
+            transition: left 0.5s;
+            z-index: 1;
+        }
+  
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar">
+        <a href="#home">Home</a>
+        <a href="#news">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+      
+    <div class="container">
+            <section class="MainScreen">
+                <p3>Hello, Traveller</p3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ducimus incidunt consequuntur placeat quos quibusdam maxime, labore qui ab perspiciatis beatae, quae consequatur cum numquam nam itaque. Ipsa magni architecto quos.</p>
+                <div class="arrow">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </section>
+            <div class="divinsect" id="aboutMe">
+                <section class="Aboutme">
+                    <div class="line1"></div>
+                    <h1>About me</h1>
+                    <br>
+                    <p>Hello, I'm 7ZLI2! My Passion is Building and 3D Modelling. My main styles are High-poly Low-poly and realistic, but I enjoy exploring other styles too. I have 4 years of building experience and about 8 months in 3D modelling/Blender.
+                        I'm currently open to do Part Time, Commission. Let me know if you want to work together! You can message me on Roblox if you need to.</p>
+                        <br><br>
+                        <div class="line"></div>
+                        <br><br>
+                        <h1>My Skills</h1>
+                        <br>
+                        <div class="skills">
+                            <span>HTML</span>
+                            <span>3D Modelling</span>
+                            <span>Map Designing</span>
+                            <span>Roblox LUA U</span>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skills">
+                            <span>Blender</span>
+                            <span>Roblox Studio</span>
+                            <span>CSS</span>
+                        </div>
+                </section>
+            </div>
+              <section class="ImagesSlider">
+                <div class="Imgbap">
+              <!--<img src="images/650_350px.png" alt="bap">-->
+                                <!--image slider start-->
+    <div class="slider">
+        <div class="slides">
+          <!--radio buttons start-->
+          <input type="radio" name="radio-btn" id="radio1">
+          <input type="radio" name="radio-btn" id="radio2">
+          <input type="radio" name="radio-btn" id="radio3">
+          <input type="radio" name="radio-btn" id="radio4">
+          <!--radio buttons end-->
+          <!--slide images start-->
+          <div class="slide first">
+            <img src="images/bap1.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/bap2.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/bap3.png" alt="">
+          </div>
+          <div class="slide">
+            <img src="images/bap4.png" alt="">
+          </div>
+          <!--slide images end-->
+          <!--automatic navigation start-->
+          <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+          </div>
+          <!--automatic navigation end-->
+        </div>
+        <!--manual navigation start-->
+        <div class="navigation-manual">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+        <!--manual navigation end-->
+      </div>
+      <!--image slider end-->
+                </div>
+                <div class="BannerText">
+                    <h1>BAP</h1>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+        <p2>2023 - 2024 ©️ 7ZLI2.com</p2>
+        <p4>All Rights Reserved</p>
+        </footer>  
+
+        <audio autoplay loop>
+            <source src="wandering.mp3" type="audio/mp3">
+        </audio> 
+    
+        <video autoplay loop muted src="backgroundvideo.mp4">
+        </video>
+
+        <script>
+            // When the user scrolls down 20px from the top of the document, slide down the navbar
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+                document.getElementById("navbar").style.left = "0";
+              } else {
+                document.getElementById("navbar").style.left = "-100px";
+              }
+            }
+            </script>
+
+      <script type="text/javascript">
+      var counter = 1;
+      setInterval(function(){
+        document.getElementById('radio' + counter).checked = true;
+        counter++;
+        if(counter > 4){
+          counter = 1;
+        }
+      }, 5000);
+      </script>
+</body>
+</html>
